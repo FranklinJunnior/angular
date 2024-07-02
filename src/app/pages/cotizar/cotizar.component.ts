@@ -1,4 +1,4 @@
-import { Component,ViewChild, ElementRef  } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
@@ -17,7 +17,7 @@ export class CotizarComponent {
   isConfirmDialog: boolean = false;
 
   constructor(
-    private http: HttpClient, 
+    private http: HttpClient,
     private route: ActivatedRoute
   ) { }
 
@@ -63,7 +63,8 @@ export class CotizarComponent {
   }
 
   enviarFormulario(form: NgForm) {
-    this.http.post('http://localhost:3000/api/pedidos', form.value).subscribe(
+    // Cambia la URL a tu servidor en la nube
+    this.http.post('http://52.67.141.2:3000/api/pedidos', form.value).subscribe(
       (response) => {
         this.showAlert('Los datos se han enviado correctamente.');
         form.reset();

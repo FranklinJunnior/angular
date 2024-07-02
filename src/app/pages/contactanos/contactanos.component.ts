@@ -15,7 +15,8 @@ export class ContactanosComponent {
     if (contactForm.invalid) {
       this._snackBar.open('Debe rellenar todos los campos.', 'Cerrar', { duration: 3000 });
     } else {
-      this.http.post('http://localhost:3000/api/contactos', contactForm.value).subscribe(
+      // Cambia la URL a tu servidor en la nube
+      this.http.post('http://52.67.141.2:3000/api/contactos', contactForm.value).subscribe(
         (response) => {
           this._snackBar.open('Los datos se han enviado correctamente.', 'Cerrar', { duration: 2000 }).afterDismissed().subscribe(() => {
             contactForm.resetForm();
