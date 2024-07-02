@@ -1,0 +1,46 @@
+.navs {
+ 
+   background: #252733;
+   color: #fff;
+
+   &__img{
+      width: 180px;
+      height: 50px;
+
+      @include responsive ($md) {
+         width: 320px;
+         height: 100;
+       }
+    
+      @include responsive ($lg) {
+        width: 250px;
+        height: 150;
+      }
+
+   }
+
+  
+
+   &__item {
+      color: #fff;
+      font-size: 10px;
+
+      @include responsive ($lg) {
+         margin-right: 20px;
+         font-size: 20PX;
+      }
+
+   }
+
+  
+   &__item:hover{
+      background-color: #ff8c00;
+      opacity: 0.5;
+
+   }
+   
+  
+
+
+
+}

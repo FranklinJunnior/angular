@@ -1,0 +1,44 @@
+.nav-link.active {
+  font-weight: bold;
+  background-color: #ff8c00;
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0dfe00;
+  color: hwb(138 0% 0%);
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para el pie de página 
+.footer {
+  flex-shrink: 0;
+  flex-grow: 0;
+  background: #ff7402;
+  width: 100%;
+}
+*/
+
+
